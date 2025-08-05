@@ -51,9 +51,8 @@ func wire() *fiber.App {
 	app.Get("/order", ordersController.GetAllOrders)
 	app.Get("/order/:id", ordersController.GetOrderByID)
 	// app.Post("/order", ordersController.Create)
-	// app.Get("/user/timeline", ordersController.GetTimeline)
-	// app.Post("/user/publish", ordersController.AddPublication)
-	// app.Post("/user/following", ordersController.AddFollowing)
+	// app.Put("/order/:id", ordersController.Create)
+	// app.Delete("/order/:id", ordersController.Create)
 
 	return app
 }
